@@ -3,15 +3,17 @@ import React, { Fragment } from "react";
 // import List from './components/List';
 import Login from "./components/Login";
 import "./App.css";
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
+import CounterContainer from "./container/CounterContainer";
 
 function App() {
   return (
     <div className="App">
-      <Login />
+      {/* <Login /> */}
       {/* <List /> */}
       {/* <Header /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <CounterContainer />
     </div>
   );
 }
