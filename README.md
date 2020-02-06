@@ -4,6 +4,13 @@ https://velog.io/@nibble/React-Redux%EB%A1%9C-Counter-%EB%A7%8C%EB%93%A4%EA%B8%B
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# 1차 : counter component 그림 > action type 정의 > action init 구성 > 리듀서 작성 > container내 connect 처리 > index.js에서 store 처리
+
+=> action을 store에 구성할때 reducer 까지 명확히 구현할것
+=> Container내에 CounterContainer 추가시 처리 방법 확인 필요
+=> module내에 store를 index.js에서 combineReducer를 이용해서 합치기
+=> index.js에서 Provider, rootStore를 이용해서 store를 결합 하기
+
 ## Available Scripts
 
 In the project directory, you can run:
