@@ -1,11 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 // import Header from './components/Header';
 // import List from './components/List';
-import Login from "./components/Login";
-import "./App.css";
-// import Counter from "./components/Counter";
+// import Login from "./components/Login";
 import CounterContainer from "./container/CounterContainer";
-
+import "./App.css";
 function App() {
   return (
     <div className="App">
