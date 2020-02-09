@@ -1,30 +1,36 @@
-const INCREMENT = 'counter/increment';
-const DECREMENT = 'counter/decrement';
+import React, {Component} from 'react';
+import { connect} from 'react-redux';
+import Counter from '../components/Counter';
+import { increment, decrement} from '../store/modules/counter';
 
-export increment = () => { type : INCREMENT };
-export decrement = () => { type : DECREMENT };
+class CounterContainer extends Component {
+    handleIncrement = () => {
+        this.props.increment();
+    }
+    handleDecrement = () => {
+        this.props.decrement();
+    }
 
-const initialState = {
-    counter: 0
-}
+    render () {
+        const { number } = this.props;
+        return (
+            <Counter 
+                value={number}
+                onIncrement={this.handleIncrement}
+                onDecrement={this.handleDecrement}
+            />
 
-export default CounterContainer = (state = initialState, action) => {
-
-    switch(action.type){
-        case INCREMENT:
-            return {
-                ...state,
-                counter: counter + 1
-            }
-            break;
-        case DECREMENT:
-            return {
-                ...state,
-                counter: counter - 1
-            }
-            break;
-        default:
-            return state;
-            break;
+        )
     }
 }
+
+const mapStateToProps = ({counter}) => ({
+    number: counter.number
+})
+
+const mapDispatchToProps = {increment, decrement } ;
+
+export default connect (
+    mapStateToProps,
+    mapDispatchToProps
+)(CounterContainer)
