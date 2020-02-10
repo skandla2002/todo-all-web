@@ -22,7 +22,7 @@ const initialData = {
     nickName: ''
 }
 
-export function userInfo (state = initialData, action ) {
+export default function userInfo (state = initialData, action ) {
     switch(action.type){
         case GETUSERINFO:
             return {
