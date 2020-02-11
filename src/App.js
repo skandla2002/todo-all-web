@@ -2,16 +2,17 @@ import React from "react";
 // import Header from './components/Header';
 // import List from './components/List';
 // import Login from "./components/Login";
-import CounterContainer from "./container/CounterContainer";
+import Counter from "./components/Counter";
+
 import "./App.css";
 function App() {
   return (
     <div className="App">
+      <Counter />
       {/* <Login /> */}
       {/* <List /> */}
       {/* <Header /> */}
       {/* <Counter /> */}
-      <CounterContainer />
     </div>
   );
 }
