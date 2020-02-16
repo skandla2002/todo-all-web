@@ -7,18 +7,28 @@ import Login from './components/Login';
 import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
 import About from './components/About';
 import Home from './components/Home';
+import Profile from './components/Profile';
 // import Counter from './components/Counter';
 import "./App.css";
+import Profiles from "./components/Profiles";
 
 class App extends Component {
   render(){
       return (
       <Router>
         <div className="App">
-            <Route exact="true" path="/" component={Login}></Route>
+            <ul>
+              <li>
+                <Link to="/profiles">프로필</Link>
+              </li>
+            </ul>
+              
+            {/* <Route exact path="/" component={Login}></Route> */}
             <Route path={["/About", "/info"]} component={About}></Route>
+            {/* <Route path="/profile/:username" component={Profile}></Route> */}
             <Route path="/Home" component={Home}></Route>
-            <Route exact="true" path="/counter" component={CounterContainer}></Route>
+            <Route exact path="/counter" component={CounterContainer}></Route>
+            <Route path="/profiles" component={Profiles}></Route>
             {/* <Link to="/">{CounterContainer}</Link>
             <Link to="/Login">{Login}</Link>         */}
         </div>
