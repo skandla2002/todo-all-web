@@ -11,6 +11,7 @@ import Profile from './components/Profile';
 // import Counter from './components/Counter';
 import "./App.css";
 import Profiles from "./components/Profiles";
+import HistorySample from './lib/HistorySample'
 
 class App extends Component {
   render(){
@@ -29,6 +30,7 @@ class App extends Component {
             <Route path="/Home" component={Home}></Route>
             <Route exact path="/counter" component={CounterContainer}></Route>
             <Route path="/profiles" component={Profiles}></Route>
+            <Route path="/history" component={HistorySample}></Route>
             {/* <Link to="/">{CounterContainer}</Link>
             <Link to="/Login">{Login}</Link>         */}
         </div>
