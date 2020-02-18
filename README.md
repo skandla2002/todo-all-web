@@ -89,4 +89,4 @@ todo web
 - 새로운 기술적용
 
 신규서비스 진행
-
+- redux 생성: 액션 타입 정의 > 액션 함수 생성 > 리듀서 생성 > combineReducer > ducks 생성 > store 생성 > store 연결
