@@ -99,3 +99,5 @@ git clone https://github.com/electron/electron-quick-start
 기준잡기
 
 하루기준 코딩하게 진행되어야함
+
+테스트 하기
