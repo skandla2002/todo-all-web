@@ -101,3 +101,5 @@ git clone https://github.com/electron/electron-quick-start
 하루기준 코딩하게 진행되어야함
 
 테스트 하기
+
+ㅡ신규 투두 처리하기
