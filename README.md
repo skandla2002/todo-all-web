@@ -136,7 +136,16 @@ git clone https://github.com/electron/electron-quick-start
    > cache 옵션 기본 15분
    > timeout 옵션(초 단위)
    > git config credential.helper 'cache --timeout=3600'
+
    > -> 1시간
 
 3. 모드 프로젝트에 동일 계정 적용
+
    > git config credential.helper store --global
+
+4. git config credential.helper 제거
+
+   > git config --global --unset credential.helper
+
+5. git config 설정 수정
+   > git config --edit
