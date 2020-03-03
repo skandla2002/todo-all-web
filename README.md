@@ -89,10 +89,12 @@ todo web
 - 새로운 기술적용
 
 신규서비스 진행
+
 - redux 생성: 액션 타입 정의 > 액션 함수 생성 > 리듀서 생성 > combineReducer > ducks 생성 > store 생성 > store 연결
 
 # electron 설치 가능
-git clone https://github.com/electron/electron-quick-start 
+
+git clone https://github.com/electron/electron-quick-start
 
 처리하기 ㅡ
 
@@ -111,3 +113,13 @@ git clone https://github.com/electron/electron-quick-start
 풀스택 개발
 
 스프링 부트로 개발진행
+
+# HTML DOM EVENT
+
+- abort : 오디오나 비디오가 중단될때 쓰임
+  <video onabort="myFunction()">
+  object.onabort = function(){ myScript }
+  object.addEventListener("abort", myScript );
+
+- afterprint: 인쇄가 시작되면 시작되는 함수
+  <body onafterprint="myFunction()">
