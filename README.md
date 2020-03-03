@@ -123,3 +123,20 @@ git clone https://github.com/electron/electron-quick-start
 
 - afterprint: 인쇄가 시작되면 시작되는 함수
   <body onafterprint="myFunction()">
+
+# git push 시 password 묻지 않기
+
+1. Credential 정보 저장
+
+   > git config credential.helper store
+
+2. 캐시 저장
+
+   > git config credential.helper cache
+   > cache 옵션 기본 15분
+   > timeout 옵션(초 단위)
+   > git config credential.helper 'cache --timeout=3600'
+   > -> 1시간
+
+3. 모드 프로젝트에 동일 계정 적용
+   > git config credential.helper store --global
