@@ -148,4 +148,10 @@ git clone https://github.com/electron/electron-quick-start
    > git config --global --unset credential.helper
 
 5. git config 설정 수정
+
    > git config --edit
+
+6. 복구 법
+   > git config credential.helper wincred
+   > git config --global user.email "abc@ccc.com"
+   > git config --global user.name "skandla2002"
