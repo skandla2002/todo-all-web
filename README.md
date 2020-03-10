@@ -156,4 +156,9 @@ git clone https://github.com/electron/electron-quick-start
    > git config --global user.email "abc@ccc.com"
    > git config --global user.name "skandla2002"
 
+<<<<<<< HEAD
 새로운 기술 적용 및 개발 진행 필요
+=======
+ㅡㅡㅡㅡ
+신규 글 등록
+>>>>>>> 106c4925ffdbfe9f30b3fa28f3f5d03dc57f45ad
