@@ -155,3 +155,5 @@ git clone https://github.com/electron/electron-quick-start
    > git config credential.helper wincred
    > git config --global user.email "abc@ccc.com"
    > git config --global user.name "skandla2002"
+
+새로운 기술 적용 및 개발 진행 필요
